@@ -33,7 +33,7 @@ In this project, you can build your own C++ application or extend this Snake gam
 
 ## Class Structure
 
-1. Levelsetter : This is a custom created class that handles fuctionalities related to the level of game i.e easy/medium/hard. The functionality that has been included is : 1. The class asks the user to input a lavel between 1 to 5. 1 corresponds to the lowest speed (easy) and 5 corresponds to the highest speed (hard). 2. The class also asks the user to input the grid size. A bigger grid size makes the game more difficult to play. A smaller grid size is easier to play with. Hence we can have a permutation combination of the above two features. This has been shown in ```levelsetter.cpp and levelsetter.h.```
+1. Levelsetter : This is a custom created class that handles fuctionalities related to the level of game i.e easy/medium/hard. The functionality that has been included is : 1.``` The class asks the user to input a level between 1 to 5. Here 1 corresponds to the lowest speed (easy) and 5 corresponds to the highest speed (hard).''' 2.``` The class also asks the user to input the grid size. A bigger grid size makes the game more difficult to play. A smaller grid size is easier to play with. Hence we can have a permutation combination of the above two features.``` This has been shown in ```levelsetter.cpp and levelsetter.h.```
 
 2. Renderer : The Renderer class given by Udacity is used here. This now includes the new feature of custom grid size. 
 
@@ -80,13 +80,14 @@ This contains informatio about the duration for which the game was played, the f
 
 ``` Files levelsetter.cpp and levelsetter.h makes use of various OOPS concepts. The objects of this class are used in snake.cpp and renderer.cpp ```
 
-#### 5. Classes use appropriate access specifiers for class members.
-
-In the file ```levelsetter.h``` private member getter and setters can be seen bein gmade use of, the implementation is there in the corresponding cpp file.
-
-#### 6. Overloaded functions allow the same function to operate on different parameters.
+#### 5. Overloaded functions allow the same function to operate on different parameters.
 
 The function ```setGrid()```  in class ```levelsetter.cpp```,  takes arguments in 2 forms. If the user wants a square grid size, the function on ```Line 31``` is called, else the function on ```Line 36``` is called if the user wants a rectangular area. The implementation is in the corresponsing header ```levelsetter.h```.
+
+#### 6. Classes use appropriate access specifiers for class members.
+
+In the file ```levelsetter.h``` private member getter and setters can be seen being made use of, the implementation is there in the corresponding cpp file.
+
 
 #### 7. Class constructors utilize member initialization lists.
 
