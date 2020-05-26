@@ -59,19 +59,19 @@ Code compiles and Runs correctly with neither nay warnings or errors.
 #### 1. The project demonstrates an understanding of C++ functions and control structures.
 
 Various control structures and functions have used throughout the different implementations in the code. To mention specifically:
-``` File : levelsetter.cpp Line 71 and Line 48 i.e From line 48 to Line 125.
-Lines 48 and 71 contains the beginning of the 2 functions which takes in user inputs i.e user_level() and user_grid(). ```
+``` File : levelsetter.cpp Line 71 and Line 48 i.e From line 48 to Line 125.```
+Lines 48 and 71 contains the beginning of the 2 functions which takes in user inputs i.e user_level() and user_grid().
 
 #### 2. The project reads data from a file and process the data, or the program writes data to a file.
 
-This program outputs ```final.txt. This can be seen in main.cpp : Line 28 to Line 34 
-This contains informatio about the duration for which the game was played, the final score and the final size of the snake.```
+This program outputs ```final.txt. This can be seen in main.cpp : Line 28 to Line 34 ```
+This contains informatio about the duration for which the game was played, the final score and the final size of the snake.
 
 #### 3. The project accepts user input and processes the input.
 
-``` File : levelsetter.cpp (Line 48 and Line 71) user_grid() and user_level() takes user inputs. The inputs taken by this class is further used for processing in 
-1.  snake.cpp in the function Speed() : Line 5 to Line 10.
-2. renderer.cpp in the function setnewGrid() : Line 42 to Line 50```
+``` File : levelsetter.cpp (Line 48 and Line 71) user_grid() and user_level() takes user inputs.``` The inputs taken by this class is further used for processing in 
+```1.  snake.cpp in the function Speed() : Line 5 to Line 10.```
+```2. renderer.cpp in the function setnewGrid() : Line 42 to Line 50```
 
 #### 4. The project uses Object Oriented Programming techniques.
 
@@ -79,30 +79,23 @@ This contains informatio about the duration for which the game was played, the f
 
 #### 5. Classes use appropriate access specifiers for class members.
 
-In the file levelsetter.h private member getter and setters can be seen bein gmade use of, the implementation is there in the corresponding cpp file.
+In the file ```levelsetter.h``` private member getter and setters can be seen bein gmade use of, the implementation is there in the corresponding cpp file.
 
 #### 6. Overloaded functions allow the same function to operate on different parameters.
 
-The function setGrid() takes arguments in 2 forms. If the user wants a square grid size, the function on Line 31 is called, else the function on Line 36 is called if the user wants a rectangular area.  
- 
-``` File : lettersetter.h Line 31 and 36, and declaration in corresponding header file. `
+The function ```setGrid()```  in class ```levelsetter.cpp```,  takes arguments in 2 forms. If the user wants a square grid size, the function on ```Line 31``` is called, else the function on ```Line 36``` is called if the user wants a rectangular area. The implementation is in the corresponsing header ```levelsetter.h```.
 
 #### 7. Class constructors utilize member initialization lists.
 
 Level is set to a default value of 0 in the constructor.``` File : levelsetter.cpp Line : 5 ```
 
-#### 8. Classes abstract implementation details from their interfaces.
-
-All these properties can be seen in ``` File : gamechanger.h line 21 ``` their is abstraction of function convert and calibate .
-
-#### 9. Classes encapsulate behavior.
+#### 8. Classes encapsulate behavior.
 
 All important data variables are such as game level, grid width and height are made private and are only accessable be getter and setter function. ``` File : levelsetter.h Line 27-30 ```
 
 ``
 
 ## Outputs of Code
-Image of first configuration with Red snake and blue Board.
 
 <img src="images/red_blue.png"/>
 
