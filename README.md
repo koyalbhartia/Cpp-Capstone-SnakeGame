@@ -33,11 +33,14 @@ In this project, you can build your own C++ application or extend this Snake gam
 
 ## Class Structure
 
-1. Level Setter : This is a custom created class that handles fuctionalities related to the level of game i.e easy/medium/hard. The functionality that has been included is : 1. The class asks the user to input a lavel between 1 to 5. 1 corresponds to the lowest speed (easy) and 5 corresponds to the highest speed (hard). 2. The class also asks the user to input the grid size. A bigger grid size makes the game more difficult to play. A smaller grid size is easier to play with. Hence we can have a permutation combination of the above two features. This has been shown in *levelsetter.cpp and levelsetter.h.*
+1. Levelsetter : This is a custom created class that handles fuctionalities related to the level of game i.e easy/medium/hard. The functionality that has been included is : 1. The class asks the user to input a lavel between 1 to 5. 1 corresponds to the lowest speed (easy) and 5 corresponds to the highest speed (hard). 2. The class also asks the user to input the grid size. A bigger grid size makes the game more difficult to play. A smaller grid size is easier to play with. Hence we can have a permutation combination of the above two features. This has been shown in ```levelsetter.cpp and levelsetter.h.```
 
 2. Renderer : The Renderer class given by Udacity is used here. This now includes the new feature of custom grid size. 
 
 3. Snake : The Snake class given by Udacity is used here. This now includes the new feature of custom level which sets the new speed of the snake.
+
+4. Game : This is where the actual game runs from which the snake is made and the foods are placed.
+
 
 ## Rubric points and Portion of code
 
@@ -97,7 +100,7 @@ All important data variables are such as game level, grid width and height are m
 
 ## Outputs of Code
 
-<img src="images/red_blue.png"/>
+<img src="images/output.png"/>
 
 This is output of terminal which shows different results and events.
 
