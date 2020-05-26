@@ -2,7 +2,7 @@
 #include <iostream>
 #include "SDL.h"
 
-Levelsetter::Levelsetter(): level_{0}{
+Levelsetter::Levelsetter(): level_{1}{
     // std::cout<<"Level Setter Constructor"<<std::endl;
     // Levelsetter::user_level();
     // Levelsetter::user_grid();
@@ -47,6 +47,7 @@ int Levelsetter::clip_grid(int size){
 
 void Levelsetter::user_level(){ 
     int input_level;
+    std::cout << "*******************" <<std::endl;
     std::cout << "Select a level of game between 1 to 5..!!" << std::endl;
     std::cout << "Note: 1 (min); 5 (max)" << std::endl;
 
@@ -69,6 +70,7 @@ void Levelsetter::user_level(){
 
 void Levelsetter::user_grid(){ 
     int input_grid;
+    std::cout << "*******************" <<std::endl;
     std::cout << "Select a grid size..!!" << std::endl;
     std::cout << "Note: Increasing grid size increases complexity" << std::endl;
     std::cout << "Option 1: Square grid" << std::endl;
@@ -81,6 +83,7 @@ void Levelsetter::user_grid(){
             case 1:
             {
                 int grid_w=0;
+                std::cout << "*******************" <<std::endl;
                 std::cout << "Enter width of square grid" << std::endl;
                 std::cout << "Enter a number between 16 and 64" <<std::endl;
                 std::cout << "Any other width will be clipped to this value" <<std::endl;
@@ -93,10 +96,13 @@ void Levelsetter::user_grid(){
             {
                 int grid_w=0;
                 int grid_h=0;
+                std::cout << "*******************" <<std::endl;
                 std::cout << "Enter width of rectangular grid grid" << std::endl;
                 std::cout << "Enter a number between 16 and 64" <<std::endl;
                 std::cout << "Any other width will be clipped to this value" <<std::endl;
                 std::cin>> grid_w;
+
+                std::cout << "*******************" <<std::endl;
                 std::cout << "Enter height of rectangular grid grid" << std::endl;
                 std::cout << "Enter a number between 16 and 64" <<std::endl;
                 std::cout << "Any other width will be clipped to this value" <<std::endl;
